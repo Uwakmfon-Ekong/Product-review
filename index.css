@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:hsl(30, 38%, 92%);
+    width: 100%;
+}
+.container{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding-top: 6rem;
+}
+.price-tag{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.image{
+    width: 50%;
+    padding: 0;
+    height: 150px;
+}
+.product{
+    width: 200px;
+    border-radius:10px 0 0 10px;
+}
+.text{
+    padding: 20px;
+    width: 50%;
+    background: white;
+    height: 300px;
+    border-radius:0 10px 10px 0;
+}
+h2{
+    font-family: 'Fraunces', serif;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.floral{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-top: 1rem;
+    color:hsl(228, 12%, 48%)
+}
+.perfume{
+   letter-spacing: 0.2rem; 
+   font-family: 'Montserrat', sans-serif;
+   font-size: 8px;
+   color: #cacbd1;
+   color:hsl(228, 12%, 48%);
+}
+button{
+    background: #4b7f6c;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    background:darkgreen;
+}
+.dollar{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(158, 36%, 37%);
+}
+del{
+    font-size: 10px;
+    color:hsl(228, 12%, 48%) ;
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 480px) {
+    body {
+        background:hsl(30, 38%, 92%);
+    }
+    .container{
+        display: block;
+        width: 400px;
+        height: 300px; 
+        padding-top:2rem;
+        padding-left: 6rem;
+  }
+  .product{
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+  }
+  .text{
+    border-radius: 0 0 10px 10px;
+    width: 200px;
+  }
+}
